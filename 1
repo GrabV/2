@@ -1,0 +1,16 @@
+fun main() {
+    println()
+    val n = readLine()!!.toInt()
+    val numbers = mutableListOf<Double>()
+    println($n)
+    repeat(n) {
+        numbers.add(readLine()!!.toDouble())
+    }
+    val sortedNumbers = numbers.sorted()
+    println()
+    for (i in 0 until n) {
+        if (sortedNumbers[i] > i + 1) {
+            println(sortedNumbers[i])
+        }
+    }
+}
